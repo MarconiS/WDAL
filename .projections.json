@@ -1,0 +1,22 @@
+{
+    "include/wdal/*.hpp": {
+        "alternate": "src/{}.cpp",
+        "type": "include",
+        "template": ["#pragma once", "", "", "namespace wdal", "{", "", "", "}"]
+    },
+    "src/*.hpp": {
+        "alternate": "src/{}.cpp",
+        "type": "header",
+        "template": ["#pragma once", "", "", "namespace wdal", "{", "", "", "}"]
+    },
+    "src/*.cpp": {
+        "alternate": ["include/wdal/{}.hpp", "src/{}.hpp"],
+        "type": "source",
+        "template": ["#include \"{}.hpp\"", "", "", "namespace wdal", "{", "", "", "}"]
+    },
+    "test/*_test.cpp": {
+        "alternate": ["src/{}.cpp", "src/{}.hpp", "include/wdal/{}.hpp"],
+        "type": "test",
+        "template": ["#include \"{}.hpp\"", "", "#include <gtest/gtest.h>", "", "", "namespace fgt", "{", "", "", "}"]
+    }
+}
