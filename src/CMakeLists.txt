@@ -1,5 +1,5 @@
 set(src
-    sample.cpp
+    sample_block.cpp
     )
 
 add_library(wdal-lib ${src})

@@ -1,5 +1,5 @@
 set(src
-    sample_test.cpp
+    sample_block_test.cpp
     )
 
 
