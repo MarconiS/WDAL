@@ -8,7 +8,8 @@ namespace wdal {
 
 struct SampleBlock {
 
-    SampleBlock(double offset) : time_offset(offset) {}
+    SampleBlock() : time_offset(0) {}
+    explicit SampleBlock(double offset) : time_offset(offset) {}
 
     bool is_dummy_block() { return samples.empty(); }
 

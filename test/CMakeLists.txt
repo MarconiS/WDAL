@@ -1,5 +1,7 @@
 set(src
+    pulse_test.cpp
     sample_block_test.cpp
+    types_test.cpp
     )
 
 
