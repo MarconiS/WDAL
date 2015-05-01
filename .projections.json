@@ -17,6 +17,6 @@
     "test/*_test.cpp": {
         "alternate": ["src/{}.cpp", "src/{}.hpp", "include/wdal/{}.hpp"],
         "type": "test",
-        "template": ["#include \"{}.hpp\"", "", "#include <gtest/gtest.h>", "", "", "namespace fgt", "{", "", "", "}"]
+        "template": ["#include \"{}.hpp\"", "", "#include <gtest/gtest.h>", "", "", "namespace wdal", "{", "", "", "}"]
     }
 }
