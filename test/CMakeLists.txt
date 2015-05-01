@@ -9,3 +9,6 @@ target_link_libraries(wdal-test
     PRIVATE
         wdal-lib
         gtest_main)
+target_include_directories(wdal-test
+    PRIVATE
+        ${gtest_SOURCE_DIR}/include)
